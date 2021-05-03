@@ -1,0 +1,93 @@
+<body>
+<textarea style="margin: 0px 849.851px 0px 0px; width: 448px; height: 252px;"></textarea>
+  <button onclick="makeScript();">
+    Run EpyScript Code
+  </button>
+    <button onclick="demo();">
+Demo
+  </button>
+   <button onclick="jquerydemo();">
+jQuery Fade In/Fade Out Demo
+  </button>
+<script src="scriptsen.js"></script>
+<script>
+  
+  function makeScript(){
+    var epyscript=document.createElement('epyscript');
+    epyscript.innerHTML=document.querySelector('textarea').value;
+    document.head.appendChild(epyscript);
+    scriptsen.setScriptElementName('epyscript')
+scriptsen.replacejsSyntax('lcl', 'var');
+scriptsen.replacejsSyntax('##', '=');
+scriptsen.replacejsSyntax('[', '.');
+scriptsen.replacejsSyntax(']', '');
+scriptsen.replacejsSyntax(':', ';'); 
+scriptsen.replacejsSyntax('fn', 'function');
+scriptsen.replacejsSyntax('-', '() {');
+scriptsen.replacejsSyntax('+', '}');
+
+    scriptsen.run();
+  }
+</script>
+
+
+  
+  <script>
+    function demo(){
+    var i = 0;
+var txt = `lcl demo ## 'Hello World!':
+fn doAlert -
+window[alert(demo)]:
++
+
+console[log('Hello World!')]:
+
+doAlert():
+`;
+var speed = 90;
+  const input = document.querySelector('textarea');
+  input.focus();
+  input.select();
+ typeWriter();
+  function typeWriter(){
+  if (i < txt.length) {
+input.value += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+}
+  }
+    }
+    
+    
+        function jquerydemo(){
+    var i = 0;
+var txt = `lcl jscript ## document[createElement('script')]:
+
+jscript[src##'//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js']:
+
+document[head[appendChild(jscript)]]:
+
+setTimeout(function-
+
+$('body')[fadeToggle()]:
+
+setTimeout(function-
+$('body')[fadeIn()]:
++, 500):
++, 200):
+`;
+var speed = 90;
+  const input = document.querySelector('textarea');
+  input.focus();
+  input.select();
+ typeWriter();
+  function typeWriter(){
+  if (i < txt.length) {
+input.value += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+}
+  }
+    }
+  </script>
+</body>
