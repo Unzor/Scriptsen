@@ -14,4 +14,4 @@ To use Scriptsen, use these scripts to help you:
 
 # EpyScript
 The web browser programming language made with Scriptsen.
-<iframe src="epyscript-demo.html"></iframe>
+<iframe src="epyscript-demo.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
