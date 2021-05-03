@@ -12,6 +12,6 @@ To use Scriptsen, use these scripts to help you:
 
 #### Put your script element before the script that handles the language!
 
-# Epyscript
+# EpyScript
 The web browser programming language made with Scriptsen.
 #### [Demo](https://scriptsen-demo.glitch.me/)
