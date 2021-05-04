@@ -16,17 +16,9 @@ jQuery Fade In/Fade Out Demo
     var epyscript=document.createElement('epyscript');
     epyscript.innerHTML=document.querySelector('textarea').value;
     document.head.appendChild(epyscript);
-    scriptsen.setScriptElementName('epyscript')
-scriptsen.replacejsSyntax('lcl', 'var');
-scriptsen.replacejsSyntax('##', '=');
-scriptsen.replacejsSyntax('[', '.');
-scriptsen.replacejsSyntax(']', '');
-scriptsen.replacejsSyntax(':', ';'); 
-scriptsen.replacejsSyntax('fn', 'function');
-scriptsen.replacejsSyntax('-', '() {');
-scriptsen.replacejsSyntax('+', '}');
-
-    scriptsen.run();
+        var epylib=document.createElement('script');
+    epylib.src="epyscript.js";
+    document.head.appendChild(epylib);
   }
 </script>
 
