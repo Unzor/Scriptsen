@@ -9,16 +9,14 @@ Demo
    <button onclick="jquerydemo();">
 jQuery Fade In/Fade Out Demo
   </button>
-<script src="scriptsen.js"></script>
+<script src="epyscript.js"></script>
 <script>
   
   function makeScript(){
     var epyscript=document.createElement('epyscript');
     epyscript.innerHTML=document.querySelector('textarea').value;
     document.head.appendChild(epyscript);
-        var epylib=document.createElement('script');
-    epylib.src="epyscript.js";
-    document.head.appendChild(epylib);
+    scriptsen.run();
   }
 </script>
 
